@@ -1,7 +1,7 @@
 # Check AccName · PHP Client
 
 [![Packagist Version](https://img.shields.io/badge/packagist-1.0.0-blue)](https://packagist.org/packages/gudevindy/checkaccname)
-[![PHP Version](https://img.shields.io/badge/php-%3E%3D8.1-777bb3)](https://www.php.net)
+[![PHP Version](https://img.shields.io/badge/php-%3E%3D8.0-777bb3)](https://www.php.net)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 PHP SDK สำหรับเรียกใช้ [Check AccName API](https://check.gudevindy.com) — **ตรวจสอบชื่อเจ้าของบัญชีธนาคารจากเลขบัญชี** · รองรับทุกธนาคารในไทย
@@ -12,14 +12,14 @@ PHP SDK สำหรับเรียกใช้ [Check AccName API](https://c
 
 - ✅ ตรวจสอบชื่อเจ้าของบัญชี (PromptPay + ORFT) ทุกธนาคารในไทย
 - ✅ แยกคำนำหน้า / ชื่อ / นามสกุลอัตโนมัติ + รองรับนิติบุคคล
-- ✅ Type-safe DTO (PHP 8.1 readonly)
+- ✅ Type-safe DTO (typed properties)
 - ✅ Exception hierarchy แยกประเภท Auth / RateLimit / Inquiry / Network
 - ✅ Zero deps · ใช้แค่ ext-curl + ext-json
 - ✅ MIT License
 
 ## Requirements
 
-- PHP **8.1+**
+- PHP **8.0+**
 - ext-curl, ext-json
 - Bearer token (ขอฟรีที่ https://check.gudevindy.com — login ด้วย LINE)
 

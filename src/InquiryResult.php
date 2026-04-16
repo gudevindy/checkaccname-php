@@ -15,21 +15,21 @@ namespace GuDevIndy\CheckAccName;
 final class InquiryResult
 {
     public function __construct(
-        public readonly string  $beneficiaryNo,         // "1234567890"
-        public readonly ?string $beneficiaryNoMasking,  // "xxx-x-x7890-x"
-        public readonly string  $beneficiaryName,       // raw จาก API
-        public readonly ?string $title,                 // คำนำหน้า ("นาย", "บจก.", ...)
-        public readonly ?string $firstName,             // ชื่อ (null เมื่อ isCompany)
-        public readonly ?string $lastName,              // นามสกุล (null เมื่อ isCompany)
-        public readonly bool    $isCompany,
-        public readonly ?string $companyName,           // ชื่อนิติบุคคล (เมื่อ isCompany)
-        public readonly string  $bankCode,
-        public readonly ?string $bankAbv,
-        public readonly bool    $blacklisted,           // ถูกรายงานเกิน threshold
-        public readonly int     $reportCount,           // จำนวน approved reports
-        public readonly int     $lookupsLast24h = 0,    // จำนวน user ค้นหาบัญชีนี้ใน 24 ชม.
-        public readonly bool    $suspicious     = false,// lookupsLast24h ≥ threshold
-        public readonly bool    $cached         = false,
+        public string  $beneficiaryNo,         // "1234567890"
+        public ?string $beneficiaryNoMasking,  // "xxx-x-x7890-x"
+        public string  $beneficiaryName,       // raw จาก API
+        public ?string $title,                 // คำนำหน้า ("นาย", "บจก.", ...)
+        public ?string $firstName,             // ชื่อ (null เมื่อ isCompany)
+        public ?string $lastName,              // นามสกุล (null เมื่อ isCompany)
+        public bool    $isCompany,
+        public ?string $companyName,           // ชื่อนิติบุคคล (เมื่อ isCompany)
+        public string  $bankCode,
+        public ?string $bankAbv,
+        public bool    $blacklisted,           // ถูกรายงานเกิน threshold
+        public int     $reportCount,           // จำนวน approved reports
+        public int     $lookupsLast24h = 0,    // จำนวน user ค้นหาบัญชีนี้ใน 24 ชม.
+        public bool    $suspicious     = false,// lookupsLast24h ≥ threshold
+        public bool    $cached         = false,
     ) {}
 
     public static function fromArray(array $a): self
