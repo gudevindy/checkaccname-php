@@ -1,0 +1,53 @@
+{
+    "name": "gudevindy/checkaccname",
+    "description": "Official PHP client for Check AccName — Thai bank account name inquiry API (check.gudevindy.com)",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "thailand",
+        "bank",
+        "account",
+        "name-inquiry",
+        "orft",
+        "kbank",
+        "scb",
+        "ktb",
+        "promptpay",
+        "kyc",
+        "fintech",
+        "fraud-prevention",
+        "blacklist"
+    ],
+    "homepage": "https://check.gudevindy.com",
+    "support": {
+        "docs":   "https://check.gudevindy.com/docs",
+        "source": "https://github.com/gudevindy/checkaccname-php",
+        "issues": "https://github.com/gudevindy/checkaccname-php/issues"
+    },
+    "authors": [
+        { "name": "GuDevIndy", "homepage": "https://gudevindy.com" }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GuDevIndy\\CheckAccName\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GuDevIndy\\CheckAccName\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable"
+}
